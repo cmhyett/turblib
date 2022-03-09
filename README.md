@@ -1,5 +1,8 @@
 # Turblib -- A JHU Turbulence Database Cluster C and Fortran Interface Library
 
+For descriptions of the datasets:
+http://turbulence.pha.jhu.edu/datasets.aspx
+
 See the end of the file for license conditions.
 
 ## About this package

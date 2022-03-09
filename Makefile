@@ -39,6 +39,14 @@ OBJ =	soapC.o \
 
 all: DEMO_turbc DEMO_turbf DEMO_mhdc DEMO_mhdf DEMO_channelc DEMO_channelf DEMO_mixingc DEMO_mixingf DEMO_getCutoutc DEMO_getCutoutf
 
+mine: isotropicCutout
+
+isotropicCutout: $(OBJ) isotropicCutout.o
+	 $(CC) -o $@ $(OBJ) isotropicCutout.o $(LDLIBS)
+
+isotropicCutout.o: compiler_flags
+
+
 DEMO_getCutoutc : $(OBJ) DEMO_getCutoutc.o
 	$(CC) -o $@ $(OBJ) DEMO_getCutoutc.o $(LDLIBS)
 
